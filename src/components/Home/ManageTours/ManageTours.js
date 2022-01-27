@@ -8,7 +8,7 @@ const ManageTours = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const url = `http://localhost:5000/tours`;
+    const url = `https://blooming-depths-94153.herokuapp.com/tours`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -23,7 +23,7 @@ const ManageTours = () => {
       "Are you sure, you want to delete the product?"
     );
     if (proceed) {
-      const url = `http://localhost:5000/deleteProduct/${id}`;
+      const url = `https://blooming-depths-94153.herokuapp.com/deleteProduct/${id}`;
       fetch(url, {
         method: "DELETE",
       })

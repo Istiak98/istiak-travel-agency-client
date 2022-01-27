@@ -96,7 +96,7 @@ const useFirebase = () => {
   };
 
   const hanldeUserInfoRegister = (email) => {
-    fetch('http://localhost:5000/users', {
+    fetch('https://blooming-depths-94153.herokuapp.com/users', {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email }),

@@ -4,7 +4,7 @@ import "./Tour.css";
 const Tour = () => {
   const [tours, setTours] = useState([]);
   useEffect(() => {
-    fetch("./Tour.json")
+    fetch("https://blooming-depths-94153.herokuapp.com/tours")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);

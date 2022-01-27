@@ -5,7 +5,7 @@ const AddTour = () => {
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
-    const url = 'http://localhost:5000/tours';
+    const url = 'https://blooming-depths-94153.herokuapp.com/tours';
     fetch(url, {
       method: "POST",
       headers: {

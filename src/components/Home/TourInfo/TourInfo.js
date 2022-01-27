@@ -6,7 +6,7 @@ const TourInfo = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("/Tour.json")
+    fetch("https://blooming-depths-94153.herokuapp.com/tours")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
