@@ -28,7 +28,7 @@ const TourCard = (props) => {
             <h6>
               Location:<span>{location}</span>
             </h6>
-            <p className="text-start">{expirence.slice(0, 100)}</p>
+            <p className="text-start">{expirence}</p>
 
             <Link to={`/detailTours/${id}`}>
               <button className="btn btn-outline-dark fa-light fa-cart-circle-arrow-down">
